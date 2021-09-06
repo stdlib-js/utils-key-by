@@ -165,6 +165,12 @@ console.log( obj );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/for-each`][@stdlib/utils/for-each]: invoke a function for each element in a collection.
+
 </section>
 
 <!-- /.related -->
@@ -231,6 +237,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/for-each]: https://github.com/stdlib-js/utils-for-each
+
+<!-- </related-links> -->
 
 </section>
 
