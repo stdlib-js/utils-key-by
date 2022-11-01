@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,26 +16,30 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var isCollection = require( '@stdlib/assert-is-collection' );
-var isFunction = require( '@stdlib/assert-is-function' );
-var format = require( '@stdlib/error-tools-fmtprodmsg' );
-
-
-// MAIN //
+import { Collection } from '@stdlib/types/object';
 
 /**
 * Converts a collection to an object whose keys are determined by a provided function and whose values are the collection values.
 *
-* @param {Collection} collection - input collection
-* @param {Function} fcn - function to invoke
-* @param {*} [thisArg] - execution context
-* @throws {TypeError} first argument must be an object
-* @throws {TypeError} second argument must be a function
-* @returns {Object} output object
+* ## Notes
+*
+* -   When invoked, the input function is provided two arguments:
+*
+*     -   `value`: collection value
+*     -   `index`: collection index
+*
+* -   If more than one element in a collection resolves to the same key, the key value is the collection element which last resolved to the key.
+*
+* -   Object values are shallow copies.
+*
+* @param collection - input collection
+* @param fcn - function to invoke
+* @param thisArg - execution context
+* @returns output object
 *
 * @example
 * function toKey( value, index ) {
@@ -51,27 +55,9 @@ var format = require( '@stdlib/error-tools-fmtprodmsg' );
 * var obj = keyBy( collection, toKey );
 * // returns { 'beep': { 'name': 'beep', 'a': 1 }, 'boop': { 'name': 'boop', 'b': 2 } }
 */
-function keyBy( collection, fcn, thisArg ) {
-	var out;
-	var len;
-	var key;
-	var i;
-	if ( !isCollection( collection ) ) {
-		throw new TypeError( format( '0kNBO', collection ) );
-	}
-	if ( !isFunction( fcn ) ) {
-		throw new TypeError( format( '0kN2S', fcn ) );
-	}
-	len = collection.length;
-	out = {};
-	for ( i = 0; i < len; i++ ) {
-		key = fcn.call( thisArg, collection[ i ], i );
-		out[ key ] = collection[ i ];
-	}
-	return out;
-}
+declare function keyBy( collection: Collection, fcn: Function, thisArg?: any ): any; // tslint-disable-line max-line-length
 
 
 // EXPORTS //
 
-module.exports = keyBy;
+export = keyBy;
