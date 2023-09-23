@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import keyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-key-by@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-key-by/tags). For example,
+
+```javascript
 import keyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-key-by@v0.1.0-esm/index.mjs';
 ```
 
@@ -135,7 +140,7 @@ var mean = context.sum / context.count;
 <body>
 <script type="module">
 
-import keyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-key-by@v0.1.0-esm/index.mjs';
+import keyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-key-by@esm/index.mjs';
 
 var arr;
 var obj;
