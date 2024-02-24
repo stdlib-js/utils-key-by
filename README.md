@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import keyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-key-by@esm/index.mjs';
+import keyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-key-by@v0.2.1-esm/index.mjs';
 ```
 
 #### keyBy( collection, fcn\[, thisArg ] )
@@ -135,7 +135,7 @@ var mean = context.sum / context.count;
 <body>
 <script type="module">
 
-import keyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-key-by@esm/index.mjs';
+import keyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-key-by@v0.2.1-esm/index.mjs';
 
 var arr;
 var obj;
