@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import keyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-key-by@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-key-by/tags). For example,
+
+```javascript
 import keyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-key-by@v0.2.2-deno/mod.js';
 ```
 
@@ -130,7 +135,7 @@ var mean = context.sum / context.count;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import keyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-key-by@v0.2.2-deno/mod.js';
+import keyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-key-by@deno/mod.js';
 
 var arr;
 var obj;
