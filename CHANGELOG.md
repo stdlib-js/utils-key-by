@@ -2,40 +2,6 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
-
-## Unreleased (2024-08-01)
-
-<section class="commits">
-
-### Commits
-
-<details>
-
--   [`22c4d29`](https://github.com/stdlib-js/stdlib/commit/22c4d29898e2b5bb4cb071a6b7f62536027eaf28) - **docs:** remove blank line _(by Athan Reines)_
-
-</details>
-
-</section>
-
-<!-- /.commits -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 1 person contributed to this release. Thank you to this contributor:
-
--   Athan Reines
-
-</section>
-
-<!-- /.contributors -->
-
-</section>
-
-<!-- /.release -->
-
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-28)
@@ -70,7 +36,59 @@ No changes reported for this release.
 
 ## 0.1.0 (2023-09-23)
 
-No changes reported for this release.
+<section class="features">
+
+### Features
+
+-   [`701fffc`](https://github.com/stdlib-js/stdlib/commit/701fffc7e3ff3b63c1fc1ad3bafa78017ccaea6d) - switch order of generic input types
+-   [`1147e6a`](https://github.com/stdlib-js/stdlib/commit/1147e6a6756955b23b9b3f0c12ca834d2b5b3273) - refactor for added type safety
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+### BREAKING CHANGES
+
+-   [`701fffc`](https://github.com/stdlib-js/stdlib/commit/701fffc7e3ff3b63c1fc1ad3bafa78017ccaea6d): switch order of generic input types
+-   [`701fffc`](https://github.com/stdlib-js/stdlib/commit/701fffc7e3ff3b63c1fc1ad3bafa78017ccaea6d): switch order of generic input types 
+
+    -   To migrate, users should update their type definitions accordingly.
+
+-   [`1147e6a`](https://github.com/stdlib-js/stdlib/commit/1147e6a6756955b23b9b3f0c12ca834d2b5b3273): refactor for added type safety
+
+</section>
+
+<!-- /.breaking-changes -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`701fffc`](https://github.com/stdlib-js/stdlib/commit/701fffc7e3ff3b63c1fc1ad3bafa78017ccaea6d) - **feat:** switch order of generic input types _(by Athan Reines)_
+-   [`1147e6a`](https://github.com/stdlib-js/stdlib/commit/1147e6a6756955b23b9b3f0c12ca834d2b5b3273) - **feat:** refactor for added type safety _(by Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
 
 </section>
 
