@@ -52,7 +52,6 @@ No changes reported for this release.
 ### BREAKING CHANGES
 
 -   [`701fffc`](https://github.com/stdlib-js/stdlib/commit/701fffc7e3ff3b63c1fc1ad3bafa78017ccaea6d): switch order of generic input types
--   [`701fffc`](https://github.com/stdlib-js/stdlib/commit/701fffc7e3ff3b63c1fc1ad3bafa78017ccaea6d): switch order of generic input types 
 
     -   To migrate, users should update their type definitions accordingly.
 
